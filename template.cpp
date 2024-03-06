@@ -1,37 +1,46 @@
 #include<bits/stdc++.h>
-#include<ext/pb_ds/assoc_container.hpp>
-#include<ext/pb_ds/tree_policy.hpp>
-
 using namespace std;
+
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
+  
+#define ordered_set tree<pair<int,int>, null_type,less<pair<int,int>>, rb_tree_tag,tree_order_statistics_node_update>
+// for equal type 'less_equal'
 
 #define ll long long
+#define int long long
 #define nl '\n'
 #define yes cout<<"YES\n"
 #define no cout<<"NO\n"
 #define all(a) a.begin(),a.end()
 #define flush fflush(stdout) 
-#define int long long
 const long long INF = 1e18;
 #define check cout<<"ok"<<nl
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;// find_by_order, order_of_key
 #define printVec(v) for(int i=0;i<v.size();i++){cout<<v[i]<<" ";}cout<<nl
 #define printVecPair(v) for(auto it : v){cout<<it.first<<" "<<it.second<<nl;}
-const int N = 1e9 + 7;
-const int inf = 1e9;
+// bool cmp(pair<int,int> &a, pair<int,int> &b){return a.second < b.second;}
+#define SetBit(x, k) (x |= (1LL << k))
+#define ClearBit(x, k) (x &= ~(1LL << k))
+#define CheckBit(x, k) ((x>>k)&1)
+const int mod = 998244353;
+const int N  = 2e5+5;
+
+
 
 
 void solve(){
-    
+	
 }
 
-int32_t main() {
 
+int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int t = 1;
-    cin>>t;
-    while(t--){
-        solve();
+    int _t = 1;
+    cin>>_t;
+    for(int i = 1;i<=_t;i++){
+    	// cout<<"Case "<<i<<": ";
+    	solve();
     }
 }
