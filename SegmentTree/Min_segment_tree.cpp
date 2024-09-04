@@ -1,5 +1,5 @@
 int seg[4*N];
-
+// 0 based index
 void built_seg(int ind,int lo,int hi){
     if(lo == hi){
         seg[ind] = ar[lo];
