@@ -1,4 +1,4 @@
-// Problem link : https://cses.fi/problemset/task/1687/
+// Problem link : https://cses.fi/problemset/task/1688
 int ar[N];
 vector<int> g[N];
 int in[N],out[N];
