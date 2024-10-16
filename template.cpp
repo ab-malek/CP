@@ -20,6 +20,7 @@ const long long INF = 1e18;
 #define printVec(v) for(int i=0;i<v.size();i++){cout<<v[i]<<" ";}cout<<nl
 #define printVecPair(v) for(auto it : v){cout<<it.first<<" "<<it.second<<nl;}
 // bool cmp(pair<int,int> &a, pair<int,int> &b){return a.second < b.second;}
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 #define SetBit(x, k) (x |= (1LL << k))
 #define ClearBit(x, k) (x &= ~(1LL << k))
 #define CheckBit(x, k) ((x>>k)&1)
