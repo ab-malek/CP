@@ -1,4 +1,4 @@
-struct segmentTreeMax {
+struct segmentTreeMax { // 1 based index
 	vector<int> seg;
 	vector<int> arr;
 	segmentTreeMax(int n,int temp[]){
