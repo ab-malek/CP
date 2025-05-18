@@ -12,6 +12,7 @@ class Solution {
             }
         }
         color[v] = 2;
+        return false;
     }
   
     bool isCyclic(int n, vector<vector<int>> &edges) {
