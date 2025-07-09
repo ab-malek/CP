@@ -33,3 +33,29 @@ class DisjointSets {
 	bool connected(int x, int y) { return find(x) == find(y); }
 	int count(){ return numberOfComponent; };
 };
+
+
+
+int par[N];
+int sz[N];
+void make(int v){
+    par[v] = v;
+    sz[v] = 1;
+}
+
+int find(int v){
+    if(v == par[v]) return v;
+    return find(par[v]);
+}
+
+void Union(int a,int b){
+    a = find(a);
+    b = find(b);
+    if(a != b){
+        if(sz[a] < sz[b]){
+            swap(a,b);
+        }
+        par[b] = a;
+        sz[a] += sz[b];
+    }
+}
