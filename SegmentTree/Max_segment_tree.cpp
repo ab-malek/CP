@@ -9,7 +9,7 @@ struct segmentTreeMax { // 1 based index
 			arr[i] = temp[i];
 		}
 	}
-	void built_seg(int ind,int lo,int hi){
+	void built(int ind,int lo,int hi){
 		if(lo == hi){
 			seg[ind] = arr[lo];
 			return;
