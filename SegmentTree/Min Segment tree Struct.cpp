@@ -1,3 +1,4 @@
+// 1 based indexing, declare n globally
 struct segmentTreeMin {
 	vector<int> seg;
 	vector<int> arr;
@@ -8,7 +9,7 @@ struct segmentTreeMin {
 			arr[i] = temp[i];
 		}
 	}
-	void built_seg(int ind,int lo,int hi){
+	void built(int ind,int lo,int hi){
 		if(lo == hi){
 			seg[ind] = arr[lo];
 			return;
